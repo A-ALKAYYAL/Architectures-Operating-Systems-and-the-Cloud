@@ -56,3 +56,4 @@ We added multiple HTML pages to the website and linked them together using ancho
 
 We uploaded the `Lab1` project folder to GitHub to back up the work and enable version control. This ensured the project could be accessed and managed online.
 
+![alt text](008.jpg)
