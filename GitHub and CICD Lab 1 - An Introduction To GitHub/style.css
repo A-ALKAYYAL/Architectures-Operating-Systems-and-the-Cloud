@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.student-info {
+    background: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.student-info p {
+    margin: 5px 0;
+}
+
+.lab-report {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.lab-report h2 {
+    margin-top: 0;
+}
+
+.step {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.step h3 {
+    margin-bottom: 5px;
+}
+
+.step p {
+    margin: 5px 0;
+}
+
+.step code {
+    background: #f4f4f4;
+    padding: 2px 5px;
+    font-family: monospace;
+}
+
+.code-section {
+    margin: 20px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.code-section h3 {
+    margin-top: 0;
+}
+
+.code-section pre {
+    background: #f4f4f4;
+    padding: 10px;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 12px;
+    border: 1px solid #ddd;
+}
+
+.code-section code {
+    font-family: monospace;
+}
+
+.step img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
