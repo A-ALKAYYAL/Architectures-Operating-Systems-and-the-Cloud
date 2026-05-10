@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Name | A-ALKAYYAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+
+    <div class="container">
+        <div class="student-info">
+            <p><strong>Full Name:</strong> ABDULRAHMAN MAZEN HASSAN</p>
+            <p><strong>Student ID:</strong> 202503876</p>
+        </div>
+
+         <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="lab2.html">Lab 2</a>
+            <a href="lab3.html">Lab 3</a>
+            <a href="lab4.html">Lab 4</a>
+			<a href="lab5.html">Lab 5</a>
+			<a href="lab6.html">Lab 6</a>
+			<a href="lab7.html">Lab 7</a>	
+			<a href="lab8.html">Lab 8</a>	
+			<a href="lab9.html">Lab 9</a>			
+        </nav>
+
+<div class="lab-report">
+    <h2>Lab 6 Placeholder</h2>
+
+
+    <div class="step">
+        <h3>Using ipconfig on VM1</h3>
+        <p>I logged into STU-503876-VM1, opened a terminal, and entered the ipconfig command. This displayed the IP address and network configuration details for the virtual machine, confirming it is connected to the virtual network.</p>
+        <img src="./Pictures/Pictures6/000.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Using ipconfig on VM2</h3>
+        <p>I logged into STU-503876-VM2, opened a terminal, and entered the ipconfig command. This showed the IP address and network settings for my development VM, confirming it is on the same virtual network as VM1.</p>
+            <img src="./Pictures/Pictures6/001.jpg" alt="1">
+
+	</div>
+
+    <div class="step">
+        <h3>Pinging VM2 from VM1</h3>
+        <p>I went back to STU-503876-VM1, opened the terminal, and ran ping [VM2sIP]. The response confirmed that both virtual machines can communicate with each other over the virtual network without any issues.</p>
+            <img src="./Pictures/Pictures6/002.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Pinging VM1 from VM2</h3>
+        <p>I logged into STU-503876-VM2, opened the terminal, and ran ping [VM1sIP]. The successful response confirmed that the development VM can also communicate with the deployment VM over the virtual network.</p>
+            <img src="./Pictures/Pictures6/003.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Using VM instead of GitHub Pages</h3>
+        <p>I went to my portfolio repository on GitHub, clicked Settings, then scrolled down to Actions and opened the Runners section to set up a local runner that will allow automatic updates from my development VM to my deployment VM.</p>
+            <img src="./Pictures/Pictures6/004.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Setting Up a Self-Hosted Runner on VM2</h3>
+        <p>I went to GitHub repository Settings → Actions → Runners, clicked "New self-hosted runner", selected Windows OS, then opened a terminal on STU-503876-VM2 and copied the commands from GitHub one by one. I kept the default name as the VM name, set the work folder to _work, skipped adding labels, and chose not to run as a service. Finally, I entered ./run.cmd and the runner started listening for jobs.</p>
+            <img src="./Pictures/Pictures6/000.jpg" alt="1">
+        <img src="./Pictures/Pictures6/005.jpg" alt="1">
+
+	</div>
+
+    <div class="step">
+        <h3>Deploying to the Runner</h3>
+        <p>I closed the runner on STU-503876-VM2, created a WebsiteBackup folder on the desktop, cut my portfolio from C:\inetpub\wwwroot and pasted it into the backup folder. I then navigated to \actions-runner, right-clicked run.cmd and selected "Run as administrator" to start the runner in admin mode. Finally, I went back to my GitHub repository, clicked the Actions tab, and selected "New Workflow" to write new YAML for deploying to the runner.</p>
+            <img src="./Pictures/Pictures6/006.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Creating PushToVM YAML</h3>
+        <p>I selected "Set up a workflow yourself", renamed the file to PushToVM.yml, and entered the YAML code to automatically push my GitHub repository to the VM and copy the files to the IIS default location (C:\inetpub\wwwroot). I then committed the changes. The runner on STU-503876-VM2 must be running for this to work.</p>
+            <img src="./Pictures/Pictures6/007.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Pushing to GitHub and Checking VM1</h3>
+        <p>I pushed my completed repository to GitHub, then opened a browser and went to http://stu-503876-vm1.net.dcs.hull.ac.uk/. updated version of my website was now live on the deployment VM. I pushed again to confirm the workflow runs automatically.</p>
+
+            <img src="./Pictures/Pictures6/009.jpg" alt="1">
+
+            <img src="./Pictures/Pictures6/010.jpg" alt="1">
+
+		<p> The updated version of my website with Lab 6 added was now live on the deployment VM.</p>
+                <img src="./Pictures/Pictures6/008.jpg" alt="1">
+
+	</div>
+
+	    <script src="script.js"></script>
+</body>
+</html>

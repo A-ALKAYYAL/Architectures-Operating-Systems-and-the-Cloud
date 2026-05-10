@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Name | A-ALKAYYAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+
+    <div class="container">
+        <div class="student-info">
+            <p><strong>Full Name:</strong> ABDULRAHMAN MAZEN HASSAN</p>
+            <p><strong>Student ID:</strong> 202503876</p>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index1.html">Home</a>
+            <a href="lab2.html">Lab 2</a>
+            <a href="lab3.html">Lab 3</a>
+            <a href="lab4.html">Lab 4</a>
+			<a href="lab5.html">Lab 5</a>
+			<a href="lab6.html">Lab 6</a>
+			<a href="lab7.html">Lab 7</a>	
+			<a href="lab8.html">Lab 8</a>				
+        </nav>
+
+<div class="lab-report">
+    <h2>Lab 5 Placeholder</h2>
+                        <img src="./Pictures5/000.jpg" alt="1">
+
+    <div class="step">
+        <h3>Accessing and Setting Up a VM</h3>
+        <p>I used Remote Desktop Connection to connect to my VM (STU-503876-VM1) with my student number as the username and university password. After logging in, I checked for Git using git version, installed Git when needed (setting default branch to "main" and keeping default options), then navigated to the Documents folder, created a Deployment folder, and cloned my portfolio repository into it.</p>
+    <img src="./Pictures5/001.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Accessing and Setting Up a VM</h3>
+        <p>I successfully opened the VM using Remote Desktop Connection, then cloned my portfolio repository into the Deployment folder.</p>
+    <img src="./Pictures5/002.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Setting Up A VM For Web Hosting</h3>
+        <p>I checked that IIS was running by entering Get-Service w3svc in the terminal and confirmed the World Wide Web Publishing Service was active. Then I navigated to This PC → Local Disk (C:) → inetpub → wwwroot on the VM.</p>
+    <img src="./Pictures5/003.jpg" alt="1">
+	<img src="./Pictures5/004.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Deploying Website on IIS</h3>
+        <p>I copied all files from my Deployment folder into C:\inetpub\wwwroot on the VM. Then I opened a browser on my local machine and entered http://stu-503876-vm1.net.dcs.hull.ac.uk, which displayed my website live from the VM.</p>
+    <img src="./Pictures5/045.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Setting Up a Development VM (VM2)</h3>
+        <p>I opened a second VM named STU-503876-VM2. I created a Development folder, cloned my portfolio repository into it, then copied all files into C:\inetpub\wwwroot. I accessed the website at http://stu-503876-vm2.net.dcs.hull.ac.uk, which displayed my portfolio live from the development VM.</p>
+    <img src="./Pictures5/005.jpg" alt="1">
+	<img src="./Pictures5/006.jpg" alt="1">
+	</div>
+
+    <div class="step">
+        <h3>Editing a Development VM</h3>
+        <p>I installed Visual Studio Code on STU-503876-VM2, opened my website from the wwwroot folder, and made a small change. When saving failed due to permissions, I clicked "Retry as admin" and the change saved successfully. My original website remained at http://stu-503876-vm1.net.dcs.hull.ac.uk and the updated version at http://stu-503876-vm2.net.dcs.hull.ac.uk. Having both a development and deployment server allows testing changes safely on the development VM before pushing them live to the deployment server, preventing broken code from reaching users.</p>
+        <p><strong>Simple Change Made:</strong> Added an emoji to the Home Page heading for better visual appeal. And the screenshot shows the two opened together.</p>
+    <img src="./Pictures5/007.jpg" alt="1">
+	</div>
+	
+	<div class="step">
+        <h3>Finished the lab</h3>
+        <p>https://github.com/A-ALKAYYAL/lab5-VM</p>
+
+	</div>
+
+</div>
+	    <script src="script.js"></script>
+</body>
+</html>
